@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CodeTube</title>
+    <link rel="icon" href="codetube.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-header {
+            text-align: center;
+            color: #333;
+        }
+        .section p {
+            text-align: center;
+            line-height: 1.6;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #e2e2e2;
+            border-radius: 10px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .faq-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq-section ul li {
+            background: #e2e2e2;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section contact-section">
+            <h1 class="section-header">Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or need assistance, feel free to reach out to us.</p>
+            
+            <div class="contact-form">
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:support@codetube.com">support@codetube.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+91 8148440665</a></p>
+            </div>
+        </div>
+
+        <div class="section faq-section">
+            <h2 class="section-header">FAQ</h2>
+            <ul>
+                <li><strong>What are your business hours?</strong><br> We are available Monday to Friday from 9am to 5pm EST.</li>
+                <li><strong>How can I reset my password?</strong><br> You can reset your password through our account recovery page.</li>
+                <li><strong>Do you offer refunds?</strong><br> Yes, we offer refunds within 30 days of purchase. Please contact us for more details.</li>
+            </ul>
+        </div>
+
+        <div class="section social-links">
+            <h2 class="section-header">Connect With Us</h2>
+            <a href="https://twitter.com/codetube" target="_blank">Twitter</a>
+            <a href="https://facebook.com/codetube" target="_blank">Facebook</a>
+            <a href="https://linkedin.com/company/codetube" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="section feedback-section">
+            <h2 class="section-header">Feedback</h2>
+            <p>We value your feedback! Let us know how we're doing or share your experience with CodeTube.</p>
+            <form action="submit_feedback.php" method="post">
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
